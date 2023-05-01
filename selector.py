@@ -1,15 +1,9 @@
-from random import randint
+import random
 
-num_list = []
+def get_lucky_nums():
+    return random.sample(range(1,45+1), k=6)
 
-while True:
-    tmp = randint(1, 45)
-    if len(num_list) == 6:
-        num_list.sort()
-        break
-    elif tmp not in num_list:
-        num_list.append(tmp)
-    else:
-        continue
-
-print(num_list)
+if __name__ == '__main__':
+    times = int(input('Enter num(1-100): '))
+    for _ in range(times):
+        print(get_lucky_nums())
