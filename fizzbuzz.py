@@ -1,9 +1,9 @@
-for i in range(1, 31):
-    if i % 15 == 0:
+for j in range(1, 17):
+    if j % 15 == 0:
         print('fizzbuzz')
-    elif i % 3 == 0:
+    elif j % 3 == 0:
         print('fizz')
-    elif i % 5 == 0:
+    elif j % 5 == 0:
         print('buzz')
     else:
-        print(f'{i}')
+        print(f'{j}')
